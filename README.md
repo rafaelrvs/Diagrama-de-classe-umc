@@ -54,3 +54,24 @@ classDiagram
   Sistema -- Contrato: possui n
   Agente -- Contrato: gerencia n
   Contrato -- Automovel: possui 1
+```
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant System
+    participant Database
+
+    User->>System: Solicitação para Modificar Aluguel
+    System->>Database: Consulta o Aluguel Atual
+    Database-->>System: Retorna Dados do Aluguel
+    System->>User: Exibe Dados do Aluguel Atual
+
+    User->>System: Fornece Novos Dados do Aluguel
+    System->>Database: Atualiza Aluguel no Banco de Dados
+    Database-->>System: Confirmação de Atualização
+    System-->>User: Confirmação de Modificação
+
+    User->>System: Revisa Aluguel Modificado
+
+```
