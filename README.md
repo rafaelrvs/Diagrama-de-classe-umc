@@ -75,3 +75,57 @@ sequenceDiagram
     User->>System: Revisa Aluguel Modificado
 
 ```
+
+
+# Digrama de redes
+
+
+
+```mermaid
+graph TD;
+    subgraph "Designer (1) - 1 Dia"
+        A[Designer]
+    end
+
+    subgraph "Frontend (2) - 3 Dias "
+        B[Frontend1]
+        C[Frontend2]
+    end
+
+    subgraph "Backend (4) -  5 Dias"
+        D[Backend1]
+        E[Backend2]
+        F[Backend3]
+        G[Backend4]
+    end
+
+    subgraph "Infra (5) - 8 horas"
+        H[Infra1]
+        I[Infra2]
+        J[Infra3]
+        K[Infra4]
+        L[Infra5]
+    end
+
+    subgraph "Banco de Dados (3) - 10 horas"
+        M[Database1]
+        N[Database2]
+        O[Database3]
+    end
+
+    A --> B
+    A --> C
+    B --> D
+    C --> E
+    D --> F
+    E --> G
+    B --> H
+    C --> I
+    D --> J
+    E --> K
+    F --> L
+    H --> M
+    I --> N
+    J --> O
+
+```
