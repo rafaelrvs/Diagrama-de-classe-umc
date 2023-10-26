@@ -88,23 +88,24 @@ graph TD;
  
     end
 
-    subgraph "Etapa com 3 dias "
+    subgraph "  "
         B[Designer A - 1 dia ]
         C[Backend  B - 3 dias]
     end
 
-    subgraph "Etapa com 7 dias"
+    subgraph " "
         D[Frontend  A 2 dias ]
-        E[Banco de dados B 1 dia ]
-        F[Backend A 3 dias]
+     
         G[Infra 1 dia]
+        H[Frontend  B 2 dias ]
+        K[Backend  B - 3 dias]
     
     end
 
 
 
-    subgraph "Etapa com 1 dia"
-        I[Database - 1 dia]
+    subgraph " "
+       I[Banco de dados B 1 dia ]
     
     end
     subgraph "Finalização"
@@ -115,12 +116,13 @@ graph TD;
     A --> B
     A --> C
     B --> D
-    C --> E
-    D --> F
-    E --> G
+     D --> K
     G --> I
-    F --> G
+K --> G
+    C --> H
     I --> J
+    H --> G
+    
 
  
 
