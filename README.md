@@ -83,34 +83,33 @@ sequenceDiagram
 
 ```mermaid
 graph TD;
-    subgraph "Designer (1) - 1 Dia"
-        A[Designer]
+    subgraph "Inicio (1)"
+        A[Inicio]
+ 
     end
 
-    subgraph "Frontend (2) - 3 Dias "
-        B[Frontend1]
-        C[Frontend2]
+    subgraph "Etapa com 3 dias "
+        B[Designer A - 1 dia ]
+        C[Backend  B - 3 dias]
     end
 
-    subgraph "Backend (4) -  5 Dias"
-        D[Backend1]
-        E[Backend2]
-        F[Backend3]
-        G[Backend4]
+    subgraph "Etapa com 7 dias"
+        D[Frontend  A 2 dias ]
+        E[Banco de dados B 1 dia ]
+        F[Backend A 3 dias]
+        G[Infra 1 dia]
+    
     end
 
-    subgraph "Infra (5) - 8 horas"
-        H[Infra1]
-        I[Infra2]
-        J[Infra3]
-        K[Infra4]
-        L[Infra5]
-    end
 
-    subgraph "Banco de Dados (3) - 10 horas"
-        M[Database1]
-        N[Database2]
-        O[Database3]
+
+    subgraph "Etapa com 1 dia"
+        I[Database - 1 dia]
+    
+    end
+    subgraph "Finalização"
+        J[Fim]
+    
     end
 
     A --> B
@@ -119,13 +118,14 @@ graph TD;
     C --> E
     D --> F
     E --> G
-    B --> H
-    C --> I
-    D --> J
-    E --> K
-    F --> L
-    H --> M
-    I --> N
-    J --> O
+    G --> I
+    F --> G
+    I --> J
+
+ 
+
+  
+ 
+
 
 ```
