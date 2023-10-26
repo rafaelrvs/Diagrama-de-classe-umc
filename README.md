@@ -98,14 +98,14 @@ graph TD;
      
         G[Infra 1 dia]
         H[Frontend  B 2 dias ]
-        K[Backend  B - 3 dias]
+        K[Backend  A - 3 dias]
     
     end
 
 
 
     subgraph " "
-       I[Banco de dados B 1 dia ]
+       I[Banco de dados  1 dia ]
     
     end
     subgraph "Finalização"
